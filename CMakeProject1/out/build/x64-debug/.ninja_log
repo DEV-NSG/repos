@@ -1,0 +1,13 @@
+# ninja log v5
+0	8	0	clean	10cefbc2b3eb0a58
+0	256	6727638064990363	CMakeProject1/CMakeFiles/CMakeProject1.dir/UseImGui.cpp.obj	65312d541b1a2582
+1	9	0	clean	10cefbc2b3eb0a58
+4	737	6727638507289445	CMakeProject1/CMakeFiles/CMakeProject1.dir/UseImGui.cpp.obj	65312d541b1a2582
+1	833	6727638510757210	CMakeProject1/CMakeFiles/CMakeProject1.dir/CMakeProject1.cpp.obj	c329f6b761302d31
+833	1613	6727638518630253	CMakeProject1/CMakeProject1.exe	a5467c0dd693e7a3
+0	677	6727640306393591	CMakeProject1/CMakeFiles/CMakeProject1.dir/CMakeProject1.cpp.obj	c329f6b761302d31
+678	2523	6727640322773179	CMakeProject1/CMakeProject1.exe	a5467c0dd693e7a3
+0	19	0	clean	10cefbc2b3eb0a58
+17	1538	6727745396577080	CMakeProject1/CMakeFiles/CMakeProject1.dir/UseImGui.cpp.obj	65312d541b1a2582
+0	4437	6727745425697903	CMakeProject1/CMakeFiles/CMakeProject1.dir/CMakeProject1.cpp.obj	c329f6b761302d31
+4437	6032	6727745439732504	CMakeProject1/CMakeProject1.exe	a5467c0dd693e7a3
