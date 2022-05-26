@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\modules",
+    "\\modules\\glfw",
+    "\\modules\\glm",
+    "\\modules\\imgui",
+    "\\modules\\opencv",
+    "\\modules\\opencv\\cmake",
+    "\\sources"
+  ],
+  "SelectedNode": "\\modules\\opencv\\CMakeLists.txt",
+  "PreviewInSolutionExplorer": false
+}

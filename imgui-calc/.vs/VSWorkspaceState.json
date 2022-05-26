@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\example",
+    "\\glad",
+    "\\imgui",
+    "\\imgui\\imgui",
+    "\\imgui\\imgui\\.github",
+    "\\imgui\\imgui\\docs",
+    "\\imgui\\imgui\\examples",
+    "\\imgui\\imgui\\examples\\example_win32_directx12",
+    "\\out"
+  ],
+  "SelectedNode": "\\example\\main.cpp",
+  "PreviewInSolutionExplorer": false
+}
