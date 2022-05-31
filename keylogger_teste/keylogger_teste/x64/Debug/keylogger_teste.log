@@ -1,0 +1,3 @@
+﻿  keylogger_teste.cpp
+C:\Users\anamf\source\repos\keylogger_teste\keylogger_teste\keylogger_teste.cpp(31,53): warning C4390: ';': empty controlled statement found; is this the intent?
+  keylogger_teste.vcxproj -> C:\Users\anamf\source\repos\keylogger_teste\x64\Debug\keylogger_teste.exe
