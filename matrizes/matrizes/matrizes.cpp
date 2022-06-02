@@ -32,7 +32,7 @@ int main()
     {
         for (k = 0; k < 3; k++)
         {
-            cout << matrix[i][k];
+            cout << matrix[i][k] << " ";
         }
         cout << "\n";
     }
@@ -45,7 +45,7 @@ int main()
         {
             if (i == k)
             {
-                cout << matrix[i][k];
+                cout << matrix[i][k] << " ";
                 soma = soma + matrix[i][k];
             }
         }
