@@ -1,3 +1,0 @@
-﻿  ConsoleApplication2.cpp
-C:\Users\anamf\source\repos\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(20,14): warning C4305: '=': truncation from 'double' to 'float'
-  ConsoleApplication2.vcxproj -> C:\Users\anamf\source\repos\ConsoleApplication2\x64\Debug\ConsoleApplication2.exe
