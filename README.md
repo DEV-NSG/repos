@@ -25,4 +25,3 @@ I don't assume responsability for what you do with the projects found here.
 ## Authors
 
 - [@DEV-NSG](https://www.github.com/DEV-NSG)
-
